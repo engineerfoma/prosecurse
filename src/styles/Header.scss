@@ -21,11 +21,19 @@
         margin: 0 59px;
         padding: 36px 0;
 
+        @media (max-width: $breakpoint1280) {
+            margin: 0 40px 0 0;
+        }
+
         &__list {
             display: flex;
             align-items: center;
             list-style: none;
             margin-right: auto;
+
+            @media (max-width: $breakpoint850) {
+                flex-direction: column;
+            }
 
             &_item {
                 text-decoration: none;
@@ -33,10 +41,18 @@
                 height: 42px;
                 font-family: $fontOpenSans;
                 font-weight: 600;
+                font-style: normal;
                 font-size: 14px;
                 line-height: 1.7;
                 color: $fntColor;
                 margin-right: 25px;
+
+                @media (max-width: $breakpoint850) {
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 30px;
+                    line-height: 1.5;
+                }
 
                 &:hover {
                     color: $hoverColor;
@@ -51,6 +67,10 @@
             font-size: 24px;
             line-height: 1.3;
             color: $fntBlueColor;
+
+            @media (max-width: $breakpoint1084) {
+                margin: 0 70px;
+            }
         }
     }
 
@@ -63,10 +83,16 @@
     &__about {
         display: flex;
         flex-direction: column;
+        margin: 0 195px;
         max-width: 509px;
         margin-bottom: 80px;
-        @media (max-width: $breakpoint1440) {
-            margin: 0 13%;
+
+        @media (max-width: $breakpoint1280) {
+            margin: 0 136px;
+        }
+
+        @media (max-width: $breakpoint1084) {
+            margin: 0 70px;
         }
 
 
@@ -76,7 +102,16 @@
             font-size: 58px;
             line-height: 1.12;
             font-weight: 900;
-            color: $fntBlueColor
+            color: $fntBlueColor;
+            letter-spacing: 0.2px;
+
+            @media (max-width: $breakpoint850) {
+                width: 241px;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.25;
+            }
+
         }
 
         &_subtitle {
@@ -87,6 +122,7 @@
             font-weight: 500;
             color: $fntColor;
             max-width: 380px;
+            letter-spacing: 0.2px;
         }
 
         &_button {
@@ -146,7 +182,7 @@
         margin: 0;
 
         @media (max-width: $breakpoint1114) {
-           justify-content: center;
+            justify-content: center;
         }
     }
 
@@ -158,9 +194,7 @@
         padding: 37px 40px;
         flex: 1 1 auto;
 
-        @media (max-width: $breakpoint768) {
-           
-        }
+        @media (max-width: $breakpoint768) {}
 
         &:hover {
             transform: scale(1.1);

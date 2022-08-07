@@ -27,17 +27,17 @@ const Header = () => {
         </ul>
         <img className="hover" src={Burger} />
       </nav>
-      <div className="header__main">
-        <div className="header__about">
-          <h2 className="header__about_title">LEGAL PRO SERVICES</h2>
-          <p className="header__about_subtitle">We know how large objects will act,
-            but things on a small scale.
-          </p>
-          <div className="buttons">
-            <button type="button" className="button header__about_button">Get Quote Now</button>
-            <button type="button" className="button header__about_button-more">Learn More</button>
-          </div>
+      <div className="header__about">
+        <h2 className="header__about_title">LEGAL PRO SERVICES</h2>
+        <p className="header__about_subtitle">We know how large objects will act,
+          but things on a small scale.
+        </p>
+        <div className="buttons">
+          <button type="button" className="button header__about_button">Get Quote Now</button>
+          <button type="button" className="button header__about_button-more">Learn More</button>
         </div>
+      </div>
+      <div className="header__main">
         <ul className="services services__list">
           <li className="services__item">
             <img className="services__item_picture" src={Law} />
