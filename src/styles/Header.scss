@@ -1,0 +1,127 @@
+@import './vars.scss';
+
+.header {
+    margin: 0 auto;
+    max-height: 752px;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    font-family: $fontMartel;
+    font-weight: 600;
+    background: url('../images/cover_header.png') no-repeat;
+    block-size: cover;
+
+    &__main {
+        margin: 0 auto;
+        max-width: 1046px;
+        padding: 80px 0;
+    }
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        max-width: 509px;
+
+
+        &_title {
+            margin: 0 0 35px;
+            font-family: $fontMartel;
+            font-size: 58px;
+            line-height: 1.12;
+            font-weight: 900;
+            color: $fntBlueColor
+        }
+
+        &_subtitle {
+            margin: 0 0 45px;
+            font-family: $fontMartel;
+            font-size: 20px;
+            line-height: 1.5;
+            font-weight: 500;
+            color: $fntColor;
+            max-width: 380px;
+        }
+
+        &_button {
+            width: 182px;
+            height: 48px;
+            border-radius: 48px;
+            font-family: $fontOpenSans;
+            font-size: 14px;
+            line-height: 2;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            background-color: $greyColor;
+            color: #FFFFFF;
+            border: none;
+
+            &:hover {
+                color: $greyColor;
+                background-color: #FFFFFF;
+                transition: .3s all ease;
+            }
+
+            &-more {
+                width: 155px;
+                height: 48px;
+                border-radius: 37px;
+                font-family: $fontOpenSans;
+                font-size: 14px;
+                line-height: 2;
+                font-weight: 700;
+                letter-spacing: 0.2px;
+                border: 1px solid $greyColor;
+                color: $greyColor;
+
+                &:hover {
+                    color: #FFFFFF;
+                    background-color: $greyColor;
+                    transition: .3s all ease;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.buttons {
+    display: flex;
+    gap: 10px
+}
+
+.navigation {
+    display: flex;
+    max-width: 1322px;
+    max-height: 104px;
+    margin: 0 59px;
+    padding: 36px 0;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-right: auto;
+
+        &_item {
+            text-decoration: none;
+            width: 42px;
+            height: 42px;
+            font-family: $fontOpenSans;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.7;
+            color: $fntColor;
+            margin-right: 25px;
+        }
+    }
+
+    &__title {
+        margin: 0 90px 0 136px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.3;
+        color: $fntBlueColor;
+    }
+}
