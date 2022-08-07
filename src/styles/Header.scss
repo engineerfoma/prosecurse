@@ -8,8 +8,11 @@
     max-width: 1440px;
     font-family: $fontMartel;
     font-weight: 600;
-    background: url('../images/cover_header.png') no-repeat;
+    background-image: url('../images/cover_header.png');
+    background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: $breakpoint1114) {}
 
     .navigation {
         display: flex;
@@ -62,6 +65,10 @@
         flex-direction: column;
         max-width: 509px;
         margin-bottom: 80px;
+        @media (max-width: $breakpoint1440) {
+            margin: 0 13%;
+        }
+
 
         &_title {
             margin: 0 0 35px;
@@ -131,18 +138,29 @@
 .services {
     &__list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         gap: 30px;
         max-width: 1046px;
         list-style: none;
         margin: 0;
+
+        @media (max-width: $breakpoint1114) {
+           justify-content: center;
+        }
     }
+
 
     &__item {
         max-width: 328px;
         max-height: 210px;
         background-color: #FFFFFF;
         padding: 37px 40px;
+        flex: 1 1 auto;
+
+        @media (max-width: $breakpoint768) {
+           
+        }
 
         &:hover {
             transform: scale(1.1);
@@ -162,6 +180,7 @@
             font-weight: 700;
             letter-spacing: 0.1px;
             color: $fntBlueColor;
+
             &-last {
                 color: #FFFFFF;
             }
