@@ -214,15 +214,17 @@
         margin: 0 auto 20px;
         align-items: center;
         background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
-        width: 65vw;
+        width: 68vw;
         height: 124px;
 
         &_title {
             color: #fff;
-            @include font(Martel, 700, 24px, 1.33);
+            @include font(Martel, 700, 20px, 1.33);
             max-width: 253px;
-            margin: 30px 180px 30px 50px;
-            letter-spacing: .1px;
+            width: 250px;
+            height: 64;
+            margin: 30px 160px 30px 50px;
+            letter-spacing: 0.1px;
         }
 
         &_input {
