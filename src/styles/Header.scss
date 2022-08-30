@@ -6,11 +6,11 @@
     height: 100%;
     width: 100%;
     max-width: 1440px;
-    font-family: $fontMartel;
-    font-weight: 600;
+    @include font(Martel, 600, 14px, 1.71);
     background-image: url('../images/cover_header.png');
     background-repeat: no-repeat;
     background-size: cover;
+    // margin-bottom: 84px;
 
     @media (max-width: $breakpoint1114) {}
 
@@ -30,6 +30,7 @@
             align-items: center;
             list-style: none;
             margin-right: auto;
+            
 
             @media (max-width: $breakpoint850) {
                 flex-direction: column;
@@ -39,11 +40,9 @@
                 text-decoration: none;
                 width: 42px;
                 height: 42px;
+                @include font(Open Sans, 600, 14px, 1.71);
                 font-family: $fontOpenSans;
-                font-weight: 600;
                 font-style: normal;
-                font-size: 14px;
-                line-height: 1.7;
                 color: $fntColor;
                 margin-right: 25px;
 
@@ -77,7 +76,7 @@
     &__main {
         margin: 0 auto;
         max-width: 1046px;
-        padding: 80px 0;
+        padding: 0;
     }
 
     &__about {
@@ -97,11 +96,8 @@
 
 
         &_title {
-            margin: 0 0 35px;
-            font-family: $fontMartel;
-            font-size: 58px;
-            line-height: 1.12;
-            font-weight: 900;
+            margin: 84px 0 35px;
+            @include font(Martel, 900, 58px, 1.12);
             color: $fntBlueColor;
             letter-spacing: 0.2px;
 
@@ -116,10 +112,7 @@
 
         &_subtitle {
             margin: 0 0 45px;
-            font-family: $fontMartel;
-            font-size: 20px;
-            line-height: 1.5;
-            font-weight: 500;
+            @include font(Martel, 500, 20px, 1.5);
             color: $fntColor;
             max-width: 380px;
             letter-spacing: 0.2px;
@@ -129,10 +122,7 @@
             width: 182px;
             height: 48px;
             border-radius: 48px;
-            font-family: $fontOpenSans;
-            font-size: 14px;
-            line-height: 2;
-            font-weight: 700;
+            @include font(Open Sans, 700, 14px, 2);
             letter-spacing: 0.2px;
             background-color: $greyColor;
             color: #FFFFFF;
@@ -148,10 +138,7 @@
                 width: 155px;
                 height: 48px;
                 border-radius: 37px;
-                font-family: $fontOpenSans;
-                font-size: 14px;
-                line-height: 2;
-                font-weight: 700;
+                @include font(Open Sans, 700, 14px, 2);
                 letter-spacing: 0.2px;
                 border: 1px solid $greyColor;
                 color: $greyColor;
@@ -173,19 +160,13 @@
 
 .services {
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         gap: 30px;
         max-width: 1046px;
-        list-style: none;
-        margin: 0;
-
+        margin: 80px 0 0;
         @media (max-width: $breakpoint1114) {
             justify-content: center;
         }
     }
-
 
     &__item {
         max-width: 328px;
@@ -193,6 +174,7 @@
         background-color: #FFFFFF;
         padding: 37px 40px;
         flex: 1 1 auto;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, .07);
 
         @media (max-width: $breakpoint768) {}
 
@@ -208,10 +190,7 @@
 
         &_title {
             margin: 12px 0 10px;
-            font-family: $fontMartel;
-            font-size: 24px;
-            line-height: 1.33;
-            font-weight: 700;
+            @include font(Martel, 700, 24px, 1.33);
             letter-spacing: 0.1px;
             color: $fntBlueColor;
 
@@ -222,16 +201,19 @@
 
         &_subtitle {
             margin: 0;
-            font-family: $fontMartel;
-            font-size: 14px;
-            line-height: 1.43;
-            font-weight: 400;
+            @include font(Martel, 400, 14px, 1.43);
             letter-spacing: 0.2px;
             color: $fntColor;
-
             &-last {
                 color: #FFFFFF;
             }
         }
     }
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
 }

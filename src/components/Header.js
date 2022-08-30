@@ -38,7 +38,7 @@ const Header = () => {
         </div>
       </div>
       <div className="header__main">
-        <ul className="services services__list">
+        <ul className="services__list list">
           <li className="services__item">
             <img className="services__item_picture" src={Law} />
             <h3 className="services__item_title">Family Law</h3>
